@@ -163,20 +163,70 @@ section h2::after {
 }
 
 .apropos p {
-    margin-bottom: 1.3rem;
+    margin-bottom: 2rem;
     color: var(--gris-tres-fonce);
     font-size: 1.3rem;
 }
 
 .mescompetences table {
-    width: 800px;
-    margin: 6rem auto;
-    text-align: center;
-    box-shadow: var(--gris-tres-clair);
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mescompetences table th, .mescompetences table td {
+    padding: 15px;
+    text-align: left;
 }
 
 .mescompetences table thead {
-    background-color: var(--violet-fonce);
-    border-color: var(--violet-fonce);
+    background-color: var(--violet-doux);
+    color: white;
+    text-transform: uppercase;
+}
+
+.mescompetences table tbody td {
+    border-bottom: 1px solid var(--gris-clair);
+}
+
+.mescompetences table tbody tr:nth-child(even){
+    background-color: #fdfdfd;
+}
+
+.mescompetences table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.mescompetences table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+footer a {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--orange-vif);
+    transform: translateY(-3px);-
 }
 
