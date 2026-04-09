@@ -230,3 +230,164 @@ footer a:hover {
     transform: translateY(-3px);-
 }
 
+
+.contact {
+    Width : 80% ;
+    Margin : 4rem auto ;
+    Text-align : center ;
+}
+
+.contact-container {
+    Display : flex ;
+    Justify-content : space-between ;
+    Gap : 3rem ;
+    Margin-top : 3rem ;
+    Flex-wrap : wrap ;
+}
+
+.contact-info, .contact-form {
+    Flex : 1 ;
+    Min-width : 300px ;
+    Background-color : white ;
+    Padding : 2rem ;
+    Border-radius : 10px ;
+    Box-shadow : 0 5px 15px rgba(0,0,0,0.05) ;
+}
+
+.contact-info p {
+    Margin : 1rem 0 ;
+    Color : var(--gris-fonce) ;
+    Font-size : 1.1rem ;
+}
+
+.contact-icons a {
+    Font-size : 2rem ;
+    Margin : 0 10px ;
+    Color : var (--violet-fonce);
+    Transition : transform 0.2s ease, color 0.3s ease ;
+}
+
+.contact-icons a :hover {
+    Color : var(--violet-fonce) ;
+    Transform : translateY(-3px) ;
+}
+
+.contact-form form {
+    Display : flex ;
+    Flex-direction : column ;
+    Gap : 1.2rem ;
+    Margin-top : 1rem ;
+}
+
+.contact-form input {
+    Padding : 12px ;
+    Border : 1px solid var(--gris-clair) ;
+    Border-radius : 5px ;
+    Font-size : 1rem ;
+}
+
+.contact-form button {
+    Background-color : var(--violet-doux) ;
+    Color : white ;
+    Border : none ;
+    Padding : 12px ;
+    Border-radius : 20px ;
+    Font-weight : 600 ;
+    Cursor : pointer ;
+    Transition : background-color 0.3s ease, transform 0.2s ease ;
+}
+
+.contact-form button :hover {
+    Background-color : var(--violet-fonce) ;
+    Transform : translateY(-2px) ;
+}
+
+.projets {
+    width: 85%;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.projets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.projet-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.projet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.projet-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.projet-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: var(--violet-doux);
+}
+
+.projet-card p {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    color: var(--gris-fonce);
+}
+
+.tech {
+    margin: 1rem 0;
+}
+
+.tech span {
+    display: inline-block;
+    background-color: var(--gris-clair);
+    color: var(--gris-tres-fonce);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 0.85rem;
+}
+
+.projet-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.projet-links a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    background-color: var(--violet-doux);
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.projet-links a i {
+    margin-right: 5px;
+}
+
+.projet-links a:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-2px);
+}
+
+
+
