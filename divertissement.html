@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Mon Divertissement - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
         <div>
-            <a href="">Mon portfolio</a>
+            <a href="index.html">Mon portfolio</a>
         </div>
         <nav>
-        <ul>
-            <li><a href="index.html">accueil</a></li>
-            <li><a href="projets.html">projets</a></li>
-            <li><a href="passions.html">passions</a></li>
-            <li><a href="divertissement.html"class="active">divertissement</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
+            <ul>
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="projets.html">projets</a></li>
+                <li><a href="passions.html">passions</a></li>
+                <li><a href="divertissement.html" class="active">divertissement</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
         </nav>
     </header>
     
-   <main>
-    <h1>Voici mes divertissements</h1>
-   </main>
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Mon Divertissement</h1>
+                <p>Découvrez ce qui me passionne en dehors du code : du terrain de football aux univers numériques de gestion.</p>
+            </div>
+        </section>
 
-    <footer><p> copyright 2026 mujidro .tous droits reservés</p></footer><i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i>
-    <p></p>
+        <div class="passions-grid">
+            <div class="passion-card hobby">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Football</h3>
+                <p>Fan inconditionnel du beau jeu. Je suis de près les performances de <strong>Lionel Messi</strong> et l'éclosion de talents comme <strong>Lamine Yamal</strong>.</p>
+            </div>
+
+            <div class="passion-card hobby">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Gaming & Management</h3>
+                <p>Passionné par les jeux de gestion sportive et de stratégie. J'aime analyser les statistiques et bâtir des équipes victorieuses.</p>
+            </div>
+
+            <div class="passion-card hobby">
+                <i class="fa-solid fa-newspaper"></i>
+                <h3>Actualités & Médias</h3>
+                <p>Toujours à l'affût des dernières infos. Je gère mon propre espace de partage, <strong>News Rights</strong>, pour rester connecté au monde.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>copyright 2026 mujidro. tous droits réservés</p>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

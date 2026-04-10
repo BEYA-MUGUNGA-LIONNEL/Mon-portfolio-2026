@@ -7,8 +7,6 @@
     --gris-clair:#EEE;
     --gris-tres-clair: #F8F8F8;
 
-
-
 }
 
 *{
@@ -21,6 +19,7 @@ body {
     background-color: var(--gris-tres-clair);
     font-family:Roboto, sans-serif;
     line-height: 1.6;
+    
 }
 
 header {
@@ -210,6 +209,7 @@ footer {
     color: white;
     text-align: center;
     padding: 3rem 0;
+    width: 100%;
 }
 
 footer p {
@@ -227,7 +227,7 @@ footer a {
 
 footer a:hover {
     color: var(--orange-vif);
-    transform: translateY(-3px);-
+    transform: translateY(-3px);
 }
 
 
@@ -306,6 +306,23 @@ footer a:hover {
     width: 85%;
     margin: 4rem auto;
     text-align: center;
+}
+.projets h1 {
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+.projets h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
 }
 
 .projets-container {
@@ -388,6 +405,391 @@ footer a:hover {
     background-color: var(--violet-fonce);
     transform: translateY(-2px);
 }
+
+
+
+/* Centrer le titre et l'intro */
+main {
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Intro de la page Passions */
+.passions-hero {
+    Text-align : center ;
+    Padding : 80px 20px ;
+    Background-color : white ; /* Fond blanc pour trancher avec les bannières */
+    Margin-bottom : 0 ; /* Pas d’espace avec la première bannière */
+}
+
+.passions-hero h1 {
+    Color : var(--violet-doux) ;
+    Font-size : 3rem ;
+    Font-weight : 900 ;
+    Margin-bottom : 15px ;
+}
+
+.passions-hero p {
+    Color : var(--gris-fonce) ;
+    Font-size : 1.2rem ;
+    Max-width : 700px ;
+    Margin : 0 auto ;
+}
+
+/* Conteneur principal des bannières */
+.passions-bannieres-container {
+    Width : 100% ;
+    Display : flex ;
+    Flex-direction : column ;
+}
+
+/* Style de base d’une bannière */
+.passion-banner {
+    Width : 100% ;
+    Min-height : 450px ; /* Hauteur de la bannière */
+    Background-size : cover ;
+    Background-position : center ;
+    Background-repeat : no-repeat ;
+    Background-attachment : fixed ; /* Effet Parallaxe (l’image défile moins vite) */
+    Display : flex ;
+    Align-items : center ; /* Centre verticalement le contenu */
+    Color : white ; /* Texte en blanc sur l’image sombre */
+    Position : relative ;
+    Transition : transform 0.3s ease ;
+}
+
+/* Zone de contenu à l’intérieur de la bannière */
+.passion-content {
+    Max-width : 1200px ;
+    Margin : 0 auto ;
+    Width : 100% ;
+    Padding : 0 50px ;
+    Display : flex ;
+}
+
+/* Zone de texte (prend la moitié de la largeur) */
+.passion-text {
+    Flex : 0 0 50% ; /* Occupe 50% de la largeur */
+    Padding : 40px ;
+    Background-color : rgba(0, 0, 0, 0.3) ; /* Léger fond pour la lisibilité */
+    Border-radius : 10px ;
+    Backdrop-filter : blur(5px) ; /* Effet de flou derrière le texte */
+}
+
+.passion-text h2 {
+    Font-size : 2.5rem ;
+    Font-weight : 700 ;
+    Margin-bottom : 20px ;
+    Position : relative ;
+    Display : inline-block ;
+}
+
+/* Barre de soulignement sous le titre */
+.passion-text h2 ::after {
+    Content : ‘’ ;
+    Display : block ;
+    Width : 60px ;
+    Height : 4px ;
+    Background-color : var(--violet-doux) ;
+    Margin-top : 10px ;
+    Border-radius : 2px ;
+}
+
+.passion-text p {
+    Font-size : 1.1rem ;
+    Line-height : 1.8 ;
+    Color : rgba(255, 255, 255, 0.9) ;
+}
+
+
+/* Style spécifique pour les icônes de la page divertissement */
+.hobby i {
+    color: #28a745; /* On utilise un vert "sport" pour changer du bleu */
+}
+
+/* Animation au survol spécifique */
+.hobby:hover {
+    border-color: #28a745;
+    background-color: #f0fff4;
+}
+
+.divertissement-header {
+    margin-bottom: 40px;
+}
+
+/* Optionnel : style pour les noms importants */
+strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* --- VARIABLES ET RÉINITIALISATION --- */
+:root {
+    --violet-doux : #6C63FF ; /* */
+    --violet-fonce : #534EDD ; /* */
+    --orange-vif : #FFA726 ; /* */
+    --gris-tres-fonce : #333 ; /* */
+    --gris-fonce : #666 ; /* */
+    --gris-clair : #EEE ; /* */
+    --gris-tres-clair : #F8F8F8 ; /* */
+}
+
+•	{
+    Margin : 0 ;
+    Padding : 0 ;
+    Box-sizing : border-box ; /* */
+}
+
+Body {
+    Background-color : var(--gris-tres-clair) ;
+    Font-family : ‘Roboto’, sans-serif ; /* */
+    Line-height : 1.6 ;
+    Color : var(--gris-tres-fonce) ;
+}
+
+/* --- NAVIGATION (HEADER) --- */
+Header {
+    Background-color : white ;
+    Box-shadow : 2px 6px 10px rgba(0, 0, 0, 0.05) ; /* */
+    Position : sticky ;
+    Top : 0 ;
+    z-index : 100 ;
+    display : flex ;
+    justify-content : space-between ;
+    align-items : center ;
+    padding : 1.5rem 3rem ; /* */
+}
+
+Header div a {
+    Text-decoration : none ;
+    Font-size : 1.8rem ;
+    Font-weight : bold ;
+    Color : var(--violet-doux) ; /* */
+}
+
+Ul {
+    Display : flex ;
+    List-style : none ; /* */
+}
+
+Ul li {
+    Margin-left : 25px ;
+}
+
+Ul li a {
+    Text-decoration : none ;
+    Color : var(--gris-tres-fonce) ;
+    Font-weight : 600 ;
+    Font-size : 1.1rem ;
+    Position : relative ;
+    Padding : 10px 0 ;
+    Transition : color 0.3s ease ;
+}
+
+/* État actif et survol */
+Ul li a :hover, a.active {
+    Color : var(--violet-doux) ; /* */
+}
+
+Ul li a ::after {
+    Content : ‘’ ;
+    Position : absolute ;
+    Left : 0 ;
+    Bottom : 0 ;
+    Height : 3px ;
+    Width : 0% ;
+    Background-color : var(--violet-doux) ;
+    Transition : width 0.3s ease ;
+}
+
+Ul li a :hover ::after, a.active ::after {
+    Width : 100% ; /* */
+}
+
+/* --- STRUCTURE GÉNÉRALE --- */
+Main {
+    Max-width : 1200px ;
+    Margin : 0 auto ;
+    Padding : 40px 20px ;
+    Text-align : center ; /* */
+}
+
+/* --- SECTION HERO (Accueil & Divertissement) --- */
+.hero {
+    Display : flex ;
+    Justify-content : center ;
+    Align-items : center ;
+    Gap : 5rem ;
+    Margin : 6rem 2rem ; /* */
+    Flex-wrap : wrap ;
+}
+
+.hero img {
+    Width : 300px ;
+    Height : 300px ;
+    Object-fit : cover ;
+    Object-position : top ;
+    Border-radius : 50% ;
+    Border : 8px solid var(--violet-fonce) ; /* */
+}
+
+.hero h1 {
+    Color : var(--violet-doux) ;
+    Font-size : 3.5rem ;
+    Font-weight : 700 ;
+    Margin-bottom : 1.2rem ;
+}
+
+.hero p {
+    Color : var(--gris-fonce) ;
+    Font-size : 1.3rem ;
+    Max-width : 600px ;
+    Margin : 0 auto 1.2rem ;
+}
+
+.hero a {
+    Text-decoration : none ;
+    Display : inline-block ;
+    Background-color : var(--violet-doux) ;
+    Color : white ;
+    Padding : 15px 30px ;
+    Border-radius : 50px ;
+    Text-transform : uppercase ;
+    Font-weight : 600 ;
+    Transition : background-color 0.3s, transform 0.2s ;
+}
+
+.hero a :hover {
+    Background-color : var(--violet-fonce) ;
+    Transform : translateY(-3px) ; /* */
+}
+
+/* --- GRILLES ET CARTES (Projets, Passions, Divertissement) --- */
+.projets-container, .passions-grid {
+    Display : grid ;
+    Grid-template-columns : repeat(auto-fit, minmax(280px, 1fr)) ; /* */
+    Gap : 30px ;
+    Margin-top : 3rem ;
+    Padding : 20px ;
+}
+
+.projet-card, .passion-card {
+    Background-color : white ;
+    Border-radius : 15px ;
+    Padding : 30px 20px ;
+    Box-shadow : 0 10px 25px rgba(0,0,0,0.08) ; /* */
+    Transition : transform 0.3s ease, box-shadow 0.3s ease ;
+    Border : 1px solid #eee ;
+}
+
+.projet-card :hover, .passion-card :hover {
+    Transform : translateY(-10px) ; /* */
+    Box-shadow : 0 15px 35px rgba(0,0,0,0.12) ;
+}
+
+.passion-card i {
+    Font-size : 3.5rem ;
+    Color : var(--violet-doux) ; /* */
+    Margin-bottom : 20px ;
+    Display : block ;
+}
+
+/* Style spécifique pour la page divertissement (Hobby) */
+.hobby i {
+    Color : #28a745 ; /* Vert pour le sport/loisir */
+}
+
+.hobby :hover {
+    Border-color : #28a745 ;
+    Background-color : #f0fff4 ; /* */
+}
+
+/* --- TABLEAU COMPÉTENCES (Accueil) --- */
+.mescompetences table {
+    Width : 90% ;
+    Margin : 2rem auto ;
+    Border-collapse : collapse ;
+    Background : white ;
+    Border-radius : 10px ;
+    Overflow : hidden ;
+    Box-shadow : 0 5px 15px rgba(0,0,0,0.08) ; /* */
+}
+
+.mescompetences table th {
+    Background-color : var(--violet-doux) ;
+    Color : white ;
+    Padding : 15px ;
+    Text-align : left ;
+}
+
+.mescompetences table td {
+    Padding : 15px ;
+    Border-bottom : 1px solid var(--gris-clair) ; /* */
+}
+
+/* --- FORMULAIRE DE CONTACT --- */
+.contact-container {
+    Display : flex ;
+    Flex-wrap : wrap ;
+    Gap : 2rem ;
+    Justify-content : center ;
+}
+
+.contact-info, .contact-form {
+    Flex : 1 ;
+    Min-width : 300px ;
+    Background : white ;
+    Padding : 2rem ;
+    Border-radius : 10px ;
+    Box-shadow : 0 5px 15px rgba(0,0,0,0.05) ; /* */
+}
+
+.contact-form form {
+    Display : flex ;
+    Flex-direction : column ;
+    Gap : 1.2rem ;
+}
+
+.contact-form input {
+    Padding : 12px ;
+    Border : 1px solid var(--gris-clair) ;
+    Border-radius : 5px ; /* */
+}
+
+.contact-form button {
+    Background-color : var(--violet-doux) ;
+    Color : white ;
+    Border : none ;
+    Padding : 12px ;
+    Border-radius : 25px ;
+    Font-weight : 600 ;
+    Cursor : pointer ;
+    Transition : background-color 0.3s ;
+}
+
+/* --- FOOTER --- */
+footer {
+    Background-color : var(--violet-doux) ;
+    Color : white ;
+    Text-align : center ;
+    Margin-top : 4rem ; /* */
+}
+
+footer a {
+    Color : white ;
+    font-size : 1.5rem ;
+    transition : color 0.3s ease, transform 0.2s ease ;
+    display : inline-block ;
+}
+
+footer a :hover {
+    Color : var(--orange-vif) ;
+    Transform : translateY(-3px) ; /* */
+}
+
 
 
 
